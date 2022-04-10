@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <link rel="stylesheet" href="styles.css">
+  <title>Y = mX + b</title>
+</head>
+
+<body>
+  
+  <!-- creating slider bars -->
+  <div class="slidecontainer">
+    <h1>Y = <span id = "slope"></span>X + <span id = "const">X</span></h1>
+    <input type="range" min="-25.0" max="25.0" value="0" step="0.1" class="slider1" id="mySlope">
+    <p>Slope(m)</p>
+  </div>
+  <div class="slidecontainer">
+    <input type="range" min="-12" max="12" value="0" step="0.1" class="slider2" id="myConst">
+    <p>interception(b)</p>
+  </div>
+
+  <!-- My Canvas -->
+    <canvas></canvas>
+    
+    <script src="canvas.js" charset="utf-8"></script>
+</body>
+
+</html>
